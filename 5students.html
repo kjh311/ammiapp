@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Volkhov:400,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+<title>Ammi App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body  {
+ background: black;
+ color: red;
+ text-align: center;
+ display: inline-block;
+ border: solid red 5px;
+ font-family: 'Luckiest Guy', cursive;
+}
+
+form  {
+ margin: 5px;
+ font-size: 20px;
+}
+
+#aScore {
+ max-width: 50px;
+ font-size: 20px;
+ height: 30px;
+ margin-top: 0;
+ text-align: center;
+}
+#bScore {
+ max-width: 50px;
+ font-size: 20px;
+ height: 30px;
+ margin-top: 0;
+ text-align: center;
+
+}
+#cScore {
+ max-width: 50px;
+ font-size: 20px;
+ height: 30px;
+ margin-top: 0;
+ text-align: center;
+}
+#dScore {
+ max-width: 50px;
+ font-size: 20px;
+ height: 30px;
+ margin-top: 0;
+ text-align: center;
+}
+#eScore {
+ max-width: 50px;
+ font-size: 20px;
+ height: 30px;
+ margin-top: 0;
+ text-align: center;
+}
+#fScore {
+ max-width: 50px;
+ font-size: 20px;
+ height: 30px;
+ margin-top: 0;
+ text-align: center;
+}
+#test {
+ max-width: 80px;
+ border: solid red 5px;
+ text-align: center;
+ height: 40px;
+ font-size: 30px;
+ margin-top: 10px;
+ color: red;
+  font-family: 'Luckiest Guy', cursive;
+}
+#totalpoints {
+ max-width: 80px;
+ border: solid red 5px;
+ text-align: center;
+ height: 40px;
+ font-size: 30px;
+ margin-top: 10px;
+ color: red;
+  font-family: 'Luckiest Guy', cursive;
+}
+#decimal  {
+ margin-top: -5px;
+ font-size: 15px;
+ line-height: 1;
+}
+bottomform  {
+ display: inline;
+}
+
+#results  {
+ line-height: 1.7;
+ font-size: 20px;
+}
+
+
+
+#btn  {
+ line-height: 2;
+ padding: 5px;
+ font-size: 22px;
+ font-family: 'Luckiest Guy', cursive;;
+ color: red;
+ margin-top: 0px;
+ width: 220px;
+ height: 50px
+}
+
+#link {
+ color: red;
+ font-size: 15px;
+}
+#box1 {
+ border: solid red 5px;
+}
+#box2 {
+ border: solid red 5px;
+}
+#box3 {
+ border: solid red 5px;
+}
+#box4 {
+ border: solid red 5px;
+}
+#box5 {
+ border: solid red 5px;
+}
+#box6 {
+ border: solid red 5px;
+}
+#box7 {
+ border: solid red 5px;
+}
+#box8 {
+ border: solid red 5px;
+}
+#apoints  {
+ color: red;
+ font-size: 35px;
+ margin: 0px;
+}
+#bpoints  {
+ color: red;
+ font-size: 35px;
+ margin: 0px;
+}
+#cpoints  {
+ color: red;
+ font-size: 35px;
+ margin: 0px;
+}
+#dpoints  {
+ color: red;
+ font-size: 35px;
+ margin: 0px;
+}
+#epoints  {
+ color: red;
+ font-size: 35px;
+ margin: 0px;
+}
+#fpoints  {
+ color: red;
+ font-size: 35px;
+ margin: 0px;
+}
+
+#intro  {
+ margin: 10px;
+ font-size: 20px;
+ padding: 5px;
+}
+
+
+
+#third  {
+ margin-bottom: 0;
+ display: inline;
+}
+#last {
+ display: inline-block;
+ padding: 10px;
+}
+
+#aName  {
+ color: red;
+  max-width: 130px;
+ padding: 10px;
+ border: solid red 5px;
+ text-align: center;
+ height: 40px;
+ font-size: 30px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 15px;
+ display: inline;
+}
+#bName  {
+ color: red;
+  max-width: 130px;
+ padding: 10px;
+ border: solid red 5px;
+ text-align: center;
+ height: 40px;
+ font-size: 30px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 15px;
+ display: inline;
+}
+#cName  {
+ color: red;
+  max-width: 130px;
+ padding: 10px;
+ border: solid red 5px;
+ text-align: center;
+ height: 40px;
+ font-size: 30px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 15px;
+ display: inline;
+}
+#dName  {
+ color: red;
+  max-width: 130px;
+ padding: 10px;
+ border: solid red 5px;
+ text-align: center;
+ height: 40px;
+ font-size: 30px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 15px;
+ display: inline;
+}
+#eName  {
+ color: red;
+  max-width: 130px;
+ padding: 10px;
+ border: solid red 5px;
+ text-align: center;
+ height: 40px;
+ font-size: 30px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 15px;
+ display: inline;
+}
+#fName  {
+ color: red;
+  max-width: 130px;
+ padding: 10px;
+ border: solid red 5px;
+ text-align: center;
+ height: 40px;
+ font-size: 30px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 15px;
+ display: inline;
+}
+
+#gScore {
+ font-size: 25px;
+
+}
+#aTotal {
+ font-size: 35px;
+ margin: 0px;
+}
+#bTotal {
+ font-size: 35px;
+ margin: 0px;
+}
+#cTotal {
+ font-size: 35px;
+ margin: 0px;
+}
+#dTotal {
+ font-size: 35px;
+ margin: 0px;
+}
+#eTotal {
+ font-size: 35px;
+ margin: 0px;
+}
+#fTotal {
+ font-size: 35px;
+ margin: 0px;
+}
+#groupScore {
+ font-size: 30px;
+ margin: 0px;
+ margin: 10px;
+}
+#aScore {
+ max-width: 140px;
+  color: red;
+ padding: 5px;
+ text-align: center;
+ height: 40px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 25px;
+ display: inline;
+}
+#bScore {
+ max-width: 140px;
+  color: red;
+ padding: 5px;
+ text-align: center;
+ height: 40px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 25px;
+ display: inline;
+}
+#cScore {
+ max-width: 140px;
+  color: red;
+ padding: 5px;
+ text-align: center;
+ height: 40px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 25px;
+ display: inline;
+}
+#dScore {
+ max-width: 140px;
+  color: red;
+ padding: 5px;
+ text-align: center;
+ height: 40px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 25px;
+ display: inline;
+}
+#eScore {
+ max-width: 140px;
+  color: red;
+ padding: 5px;
+ text-align: center;
+ height: 40px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 25px;
+ display: inline;
+}
+#fScore {
+ max-width: 140px;
+  color: red;
+ padding: 5px;
+ text-align: center;
+ height: 40px;
+ margin-top: 10px;
+ font-family: 'Luckiest Guy', cursive;
+ font-size: 25px;
+ display: inline;
+}
+span  {
+ font-size: 30px;
+}
+</style>
+</head>
+
+
+
+<div id="box1">
+
+<div id="second">
+<form>
+Enter the <span>#</span> of questions on the test:
+<input type="text" id="test"/>
+</form>
+</div>
+<br>
+
+<div id="pointsquestion">
+<form>
+Enter the points the test is worth:
+<input type="text" id="totalpoints"/>
+</form>
+</div>
+<br>
+
+<p id="intro"> Enter the student's name and <span>#</span> of questions right:</p>
+</div>
+
+
+<div id="box2">
+
+<form>
+<form id = "studentBox1" ACTION="" METHOD="GET">
+<input placeholder="Student # 1" type="text" id="aName"/>
+</form>
+
+
+<form id="scoreBox1" ACTION="" METHOD="GET">
+<input placeholder="Score #1" type="text" id="aScore"/>
+</form>
+
+<p id="aTotal"></p>
+<br>
+
+<p id="apoints"></p>
+<br>
+</div>
+
+<div id="box3">
+<form>
+<form id = "studentBox2" ACTION="" METHOD="GET">
+<input placeholder="Student # 2" type="text" id="bName"/>
+</form>
+
+<form id="scoreBox2" ACTION="" METHOD="GET">
+<input placeholder="Score #2" type="text" id="bScore"><br></form>
+
+<p id="bTotal"></p>
+<br>
+
+<p id="bpoints"></p>
+<br>
+</div>
+
+<div id="box4">
+
+<form>
+<form id = "studentBox3" ACTION="" METHOD="GET">
+<input placeholder="Student # 3" type="text" id="cName"/>
+</form>
+
+<form id="scoreBox3" ACTION="" METHOD="GET">
+<input placeholder="Score #3" type="text" id="cScore"><br></form>
+
+<p id="cTotal"></p>
+<br>
+
+<p id="cpoints"></p>
+<br>
+</div>
+
+<div id="box5">
+
+<form>
+<form id = "studentBox4" ACTION="" METHOD="GET">
+<input placeholder="Student # 4" type="text" id="dName"/>
+</form>
+
+<form id="scoreBox4" ACTION="" METHOD="GET">
+<input placeholder="Score #4" type="text" id="dScore"><br></form>
+
+<p id="dTotal"></p>
+<br>
+
+<p id="dpoints"></p>
+<br>
+</div>
+
+
+
+
+
+<div id="box7">
+<form>
+<form id = "studentBox5" ACTION="" METHOD="GET">
+<input placeholder="Student # 5" type="text" id="eName"/>
+</form>
+
+
+<form id="scoreBox5" ACTION="" METHOD="GET">
+<input placeholder="Score #5" type="text" id="eScore"/>
+</form>
+
+<p id="eTotal"></p>
+<p id="epoints"></p>
+<br>
+
+</div>
+
+<div id="box8">
+
+<p id="groupScore"></p>
+
+
+
+
+<div id="last">
+<input type="button" id="btn" value="Calculate scores!" onclick="calculate();"/>
+</div>
+<br>
+
+<a  id="link" href="grading.html">How are grades calculated?</a>
+
+<br>
+
+</div>
+
+
+
+
+
+</body>
+
+<script>
+
+//alert("working");
+
+var calculate = function() {
+ var aTotal = document.getElementById('aTotal');
+ var bTotal = document.getElementById('bTotal');
+ var cTotal = document.getElementById('cTotal');
+ var dTotal = document.getElementById('dTotal');
+ var eTotal = document.getElementById('eTotal');
+
+ var aScore = document.getElementById('aScore');
+ var bScore = document.getElementById('bScore');
+ var cScore = document.getElementById('cScore');
+ var dScore = document.getElementById('dScore');
+ var eScore = document.getElementById('eScore');
+
+ var gScore = document.getElementById('gScore');
+ var test = document.getElementById('test');
+ var totalpoints = document.getElementById('totalpoints');
+ var apoints = document.getElementById('apoints');
+ var bpoints = document.getElementById('bpoints');
+ var cpoints = document.getElementById('cpoints');
+ var dpoints = document.getElementById('dpoints');
+ var epoints = document.getElementById('epoints');
+
+
+ test = test.value;
+ totalpoints = totalpoints.value;
+
+
+ var btn = document.getElementById('btn');
+
+
+ aScore = parseInt(aScore.value);
+ bScore = parseInt(bScore.value);
+ cScore = parseInt(cScore.value);
+ dScore = parseInt(dScore.value);
+ eScore = parseInt(eScore.value);
+
+
+
+
+
+
+ gScore = (parseFloat(aScore + bScore + cScore + dScore + eScore) / 5);
+
+
+ aTotal.innerHTML = (((aScore / test) * 75) + ((gScore / test) * 25)).toFixed(2) + "%";
+ bTotal.innerHTML = (((bScore / test) * 75) + ((gScore / test) * 25)).toFixed(2) + "%";
+ cTotal.innerHTML = (((cScore / test) * 75) + ((gScore / test) * 25)).toFixed(2) + "%";
+ dTotal.innerHTML = (((dScore / test) * 75) + ((gScore / test) * 25)).toFixed(2) + "%";
+ eTotal.innerHTML = (((eScore / test) * 75) + ((gScore / test) * 25)).toFixed(2) + "%";
+
+ groupScore.innerHTML = "Group Average: " + ((gScore / test) * 100).toFixed(2) + "%";
+ apoints.innerHTML = (((((aScore / test) * 75) + ((gScore / test) * 25)).toFixed(0) * totalpoints) / 100) + " pts";
+ bpoints.innerHTML = (((((bScore / test) * 75) + ((gScore / test) * 25)).toFixed(0) * totalpoints) / 100) + " pts";
+ cpoints.innerHTML = (((((cScore / test) * 75) + ((gScore / test) * 25)).toFixed(0) * totalpoints) / 100) + " pts";
+ dpoints.innerHTML = (((((dScore / test) * 75) + ((gScore / test) * 25)).toFixed(0) * totalpoints) / 100) + " pts";
+ epoints.innerHTML = (((((eScore / test) * 75) + ((gScore / test) * 25)).toFixed(0) * totalpoints) / 100) + " pts";
+
+
+}
+
+
+//enter key triggers button
+
+</script>
+</html>
