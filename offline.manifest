@@ -1,0 +1,16 @@
+CACHE MANIFEST
+#v1
+
+CACHE:
+index.html
+grading.html
+4students.html
+5students.html
+6students.html
+ammiapp.png
+
+NETWORK:
+*
+
+FALLBACK:
+/ /offline.html
